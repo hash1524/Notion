@@ -26,7 +26,7 @@
 
     setInterval(() => {
       const iframe = document.getElementById("liveFrame");
-      iframe.src = iframe.src; // Reload the iframe
+      iframe.src = iframe.src+"?nocache="+new Date().getTime(); // Reload the iframe
     }, refreshInterval);
   </script>
 </body>
